@@ -1,0 +1,15 @@
+﻿@page
+@model BackEndLabs.Pages.Tourists
+
+@{
+    ViewData["Title"] = "Tourists";
+    Layout = "Shared/_Layout";
+}
+
+@foreach (var tourist in Model.TouristsSet)
+{
+    <a href="">
+        @tourist.Name
+        @tourist.Surname
+    </a>
+}
