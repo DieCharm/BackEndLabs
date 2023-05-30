@@ -1,0 +1,17 @@
+﻿@page
+@model BackEndLabs.Pages.Resorts
+
+@{
+    ViewData["Title"] = "Resorts";
+    Layout = "Shared/_Layout";
+}
+
+@foreach (var resort in Model.ResortsSet)
+{
+    <div class="menu">
+        <a href="~/Reservations">
+            @resort.Name
+            @resort.Country
+        </a>
+    </div>
+}

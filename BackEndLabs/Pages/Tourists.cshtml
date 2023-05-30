@@ -8,8 +8,10 @@
 
 @foreach (var tourist in Model.TouristsSet)
 {
-    <a href="">
-        @tourist.Name
-        @tourist.Surname
-    </a>
+    <div class="menu">
+        <a href="~/Reservations">
+            @tourist.Name
+            @tourist.Surname
+        </a>
+    </div>
 }
